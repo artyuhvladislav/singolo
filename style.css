@@ -1,1 +1,203 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: local("Lato Light"), local("Lato-Light"), url("./assets/fonts/Lato-Light.woff") format("woff"), url("./assets/fonts/Lato-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: local("Lato Regular"), local("Lato-Regular"), url("./assets/fonts/Lato-Regular.woff") format("woff"), url("./assets/fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: local("Lato Bold"), local("Lato-Bold"), url("./assets/fonts/Lato-Bold.woff") format("woff"), url("./assets/fonts/Lato-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: local("Lato Black"), local("Lato-Black"), url("./assets/fonts/Lato-Black.woff") format("woff"), url("./assets/fonts/Lato-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+}
+
+.section {
+  padding: 65px 0 68px;
+  background: #2d303a;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 30px;
+  color: #767e9e;
+  font-weight: 300;
+}
+
+.portfolio {
+  padding-top: 88px;
+  border-bottom: 6px solid #323746;
+}
+
+.portfolio .description {
+  margin-bottom: 10px;
+}
+
+.portfolio .img-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.portfolio .img-container img {
+  max-width: 220px;
+}
+
+.portfolio .buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.portfolio .buttons-container button {
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  padding: 0 6px;
+  color: #767e9e;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.portfolio .buttons-container button:first-child {
+  margin-left: 0;
+}
+
+.portfolio .buttons-container button:hover {
+  background: #ccc;
+  color: blue;
+}
+
+.portfolio .buttons-container .active {
+  border: 1px solid #c5c5c5;
+  color: #dedede;
+}
+
+.about {
+  background: #f2f2f2;
+  border-bottom: 6px solid #fff;
+}
+
+.about .description {
+  margin-bottom: 46px;
+}
+
+.persons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.persons-container .item {
+  max-width: 300px;
+}
+
+.persons-container .item__img {
+  margin-bottom: 12px;
+}
+
+.persons-container .item__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 900;
+}
+
+.persons-container .item__description {
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-weight: 400;
+}
+
+.persons-container .item__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.persons-container .item__social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid #767e9e;
+}
+
+.persons-container .item__social a:hover {
+  background: #ccc;
+}
+/*# sourceMappingURL=style.css.map */
